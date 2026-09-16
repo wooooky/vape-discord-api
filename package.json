@@ -1,0 +1,18 @@
+{
+  "name": "vape-discord-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bot + API de presenca do dono (VapeV4-Better). O site consome GET /api/status.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=16.11"
+  }
+}
