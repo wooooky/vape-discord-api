@@ -80,6 +80,7 @@ app.use((req, res, next) => {
   next();
 });
 app.get('/health', (req, res) => res.json({ ok: true, owner: OWNER_ID }));
+app.get('/', (req, res) => res.json({ ok: true, service: 'vape-discord-api', status: '/api/status' }));
 app.get('/api/status', async (req, res) => {
   try {
     res.set('Cache-Control', 'no-store');
